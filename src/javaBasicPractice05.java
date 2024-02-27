@@ -14,7 +14,7 @@ public class javaBasicPractice05 {
 //            curArr = x * Math.min(height[left], height[left]); //이렇게도 사용가능
 //            maxArea = Math.max(maxArea, curArr); //이렇게도 사용가능
 
-            if(height[left] < height[right]){ // 작은 쪽은 한칸 옮겨서 큰 면적이 나올 수 잇는지 두 벽의 높이를 계산
+            if(height[left] < height[right]){ // 작은 쪽은 한칸 옮겨서 더 큰 면적이 나올 수 있는지 두 벽의 높이를 계산
                 left++;
             }else {
                 right--;
