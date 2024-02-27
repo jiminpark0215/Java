@@ -1,4 +1,4 @@
-//for문 연습 - 별찍기
+//그래프 비교
 
 public class javaBasicPractice05 {
     public static int solution(int[] height){
