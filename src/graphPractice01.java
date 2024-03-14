@@ -4,11 +4,11 @@
 
 import sun.awt.windows.WPrinterJob;
 
-class Node2{
+class Node14{
     int id;
-    Node2 next;
+    Node14 next;
 
-    public Node2(int id , Node2 next){
+    public Node14(int id , Node14 next){
         this.id = id;
         this.next = next;
     }
@@ -16,12 +16,12 @@ class Node2{
 
 class MyGraphList{
     char[] vertices;
-    Node2[] adjList;
+    Node14[] adjList;
     int elemCnt;
     public MyGraphList(){}
     public MyGraphList(int size){
         this.vertices = new char[size];
-        this.adjList = new Node2[size];
+        this.adjList = new Node14[size];
         this.elemCnt = 0;
     }
 
@@ -38,18 +38,19 @@ class MyGraphList{
     }
 
     public void addEdge(int x, int y){
-        this.adjList[x] = new Node2(y, this.adjList[x]);
-        this.adjList[y] = new Node2(x, this.adjList[y]);
+        this.adjList[x] = new Node14(y, this.adjList[x]);
+        this.adjList[y] = new Node14(x, this.adjList[y]);
     }
 
     public void addDirectedEdge(int x, int y){//단방향
-        this.adjList[x] = new Node2(y, this.adjList[x]);
+        this.adjList[x] = new Node14(y, this.adjList[x]);
     }
 
-    public void printAdjacentMatrix(){
+    public void printAdjacentList(){
         for (int i = 0; i < this.elemCnt; i++) {
             System.out.print(this.vertices[i] + " : ");
-            Node2 cur = this.adjList[i];
+
+            Node14 cur = this.adjList[i];
             while (cur != null){
                 System.out.print(this.vertices[cur.id] + " ");
                 cur = cur.next;
@@ -73,7 +74,7 @@ public class graphPractice01 {
         graph.addEdge(1, 3);
         graph.addEdge(2, 3);
 
-        graph.printAdjacentMatrix();
+        graph.printAdjacentList();
         
     }
 }

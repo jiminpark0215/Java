@@ -59,8 +59,8 @@ class MyGraphMatrix{
             System.out.println();
         }
     }
-
 }
+
 public class graph {
     public static void main(String[] args) {
         MyGraphMatrix graph = new MyGraphMatrix(4);
