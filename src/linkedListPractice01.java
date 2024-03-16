@@ -1,5 +1,8 @@
+import java.util.HashMap;
 
 class Node{
+    boolean isTerminal;
+    HashMap<Character, Node> child;
     int data;
     Node next;
 
