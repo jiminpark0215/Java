@@ -1,5 +1,5 @@
+import java.util.*;
 import java.io.*;
-import java.util.StringTokenizer;
 
 /*
 백준 1924
