@@ -2,7 +2,7 @@ import java.io.IOException;
 import java.util.Scanner;
 /*
 
-
+leet코드 997
 마을판사가 존재하고 x라고 하자. 모두가 x를 신뢰해야 하므로 ①trust배열 안에 [1,x],[2,x],[3,x]....[n,x]가 전부 있어야 하고
 x는 아무도 신뢰하지 않으므로 ②[x,n]은 있으면 안된다
 이 값을 계산하기 위해 tsum[N] 배열을 만들어서 tsum[x-1]에 x를 믿는 사람들의 번호의 합을 저장한다.
