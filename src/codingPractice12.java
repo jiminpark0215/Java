@@ -33,7 +33,9 @@ public class codingPractice12 {
         int cnt = 0;
 
         while (true){
-            N = ((N % 10) * 10) + (((N / 10) + (N % 10)%10);
+            //26에서 십의 자릿수를 구하고 싶으면 10으로 나누면 되고
+            //일의 자릿수를 구하고 싶으면 10으로 나눈 나머지를 구하면 된다.
+            N = (N % 10 * 10) + ((N / 10 + N % 10)% 10);
             cnt++;
             if(start == N) break;
         }
